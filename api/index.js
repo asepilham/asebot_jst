@@ -19,12 +19,11 @@ bot.onText(/\/start/, (msg) => {
         click /predict`
     );   
 });
-
-bot.onText(/\/menu/, (msg) => { 
-    console.log(msg)
+state = 0;
+bot.onText(/\/predict/, (msg) => { 
     bot.sendMessage(
         msg.chat.id,
-        `masukan nilai 1|v contohnya 9|9`
+        `masukan nilai i|v contohnya 9|9`
     );   
     state =1;
 });
